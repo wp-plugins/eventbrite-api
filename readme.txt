@@ -40,7 +40,28 @@ Yes! Check out the [user assistance page](http://automattic.github.io/eventbrite
 
 = Events don't quite look like the rest of the theme – how can I fix it? =
 
-While a theme doesn't need to know about the plugin to display events, it's always best if the theme developer optimizes their theme for Eventbrite. You can post on the [theme's forum](https://wordpress.org/support/) and send them [this link](https://github.com/Automattic/eventbrite-api). You can also send an email to themes@wordpress.com and we'll see what we can do to help.
+While a theme doesn't need to know about the plugin to display events, it's always best if the theme developer optimizes their theme for Eventbrite. You can post on the [theme's forum](https://wordpress.org/support/) and send them [this link](https://github.com/Automattic/eventbrite-api). You can also send an email to themes@wordpress.com and we'll see what we can do to help. The following themes have already been optimized:
+
+* Twenty Fifteen
+* Twenty Fourteen
+* Twenty Thirteen
+* Twenty Twelve
+* Twenty Eleven
+* Twenty Ten
+* [Bosco](https://wordpress.org/themes/bosco/)
+* [Chunk](https://wordpress.org/themes/chunk/)
+* [Coraline](https://wordpress.org/themes/coraline/)
+* [Edin](https://wordpress.org/themes/edin/)
+* [Fictive](https://wordpress.org/themes/fictive/)
+* [Goran](https://wordpress.org/themes/goran/)
+* [Ryu](https://wordpress.org/themes/ryu/)
+* [Sketch](https://wordpress.org/themes/sketch/)
+* [Sidekick](https://wordpress.org/themes/sidekick/)
+* [Singl](https://wordpress.org/themes/singl/)
+* [Superhero](https://wordpress.org/themes/superhero/)
+* [Sorbet](https://wordpress.org/themes/sorbet/)
+* [Tonal](https://wordpress.org/themes/tonal/)
+* [Writr](https://wordpress.org/themes/writr/)
 
 = I'm a theme developer; how can I make my theme Eventbrite-optimized? =
 
