@@ -17,6 +17,8 @@ By connecting to your [Eventbrite account](http://eventbrite.com/), events can b
 
 As a theme or plugin developer, you get simple-to-use tools for making any theme or plugin Eventbrite-compatible. Use the helper functions to remove the complexity and heavy-lifting of API calls, and take advantage of assorted template tags for displaying various event information.
 
+*Eventbrite logo used by permission. Banner photo by [Daniel Robert Dinu](http://www.concertphotography.ro/), licensed under [CC0](http://creativecommons.org/choose/zero/).*
+
 == Installation ==
 
 The Eventbrite API plugin also requires the [Keyring plugin](https://wordpress.org/plugins/keyring/), which is used for managing the user's connection to eventbrite.com. Keyring needs to be installed, activated, and using a connection to eventbrite.com for any events to display on the website.
