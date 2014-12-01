@@ -30,7 +30,7 @@ If the eventbrite API plugin is installed but missing Keyring or an eventbrite.c
 
 == Frequently Asked Questions ==
 
-= Are there more detailed instructions for Keyring and getting connected to Eventbrite?
+= Are there more detailed instructions for Keyring and getting connected to Eventbrite? =
 
 Yes! Check out the [user assistance page](http://automattic.github.io/eventbrite-api/users.html) on the [Eventbrite API website](http://automattic.github.io/eventbrite-api/), and [post to the forums](https://wordpress.org/support/plugin/eventbrite-api/) if you need any further help.
 
