@@ -86,7 +86,7 @@ This plugin was developed by [Automattic](http://automattic.com/), in direct par
 == Changelog ==
 
 = 1.0.3 - January 31, 2015 =
-* Display Edit link only if user has `edit_posts` capability.
+* Display Edit link only if user is logged in with appropriate capabilities.
 * Only output event logo markup if one exists. Corrects broken image icon in Firefox.
 
 = 1.0.2 - January 21, 2015 =
