@@ -3,7 +3,7 @@ Contributors: jkudish, kwight
 Tags: eventbrite, events, api, WordPress.com
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,6 +84,10 @@ All development for Eventbrite API plugin is done through the [GitHub repo](http
 This plugin was developed by [Automattic](http://automattic.com/), in direct partnership with [Eventbrite](http://eventbrite.com). The Eventbrite name and logo are used by permission.
 
 == Changelog ==
+
+= 1.0.3 - January 31, 2015 =
+* Display Edit link only if user has `edit_posts` capability.
+* Only output event logo markup if one exists. Corrects broken image icon in Firefox.
 
 = 1.0.2 - January 21, 2015 =
 * Add filter for transient expiry.
