@@ -366,7 +366,7 @@ class Eventbrite_Query extends WP_Query {
 		if ( eventbrite_is_event() ) {
 			$classes[] = 'eventbrite-event';
 
-			if ( isset( get_post()->logo_url ) ) {
+			if ( ! empty( get_post()->logo_url ) ) {
 				$classes[] = 'has-post-thumbnail';
 			}
 		}
