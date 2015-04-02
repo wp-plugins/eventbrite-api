@@ -87,6 +87,7 @@ This plugin was developed by [Automattic](http://automattic.com/), in direct par
 
 = 1.0.4 - April 2, 2015 =
 * Update to logo handling; Eventbrite announced a sudden breaking change to happen April 7th, 2015.
+* Fix bug affecting detection of logos in events.
 
 = 1.0.3 - January 31, 2015 =
 * Display Edit link only if user is logged in with appropriate capabilities.
