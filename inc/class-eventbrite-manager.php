@@ -51,12 +51,12 @@ class Eventbrite_Manager {
 		}
 
 		// Return a cached result if we have one.
-		// if ( ! $force ) {
-		// 	$cached = $this->get_cache( $endpoint, $params );
-		// 	if ( ! empty( $cached ) ) {
-		// 		return $cached;
-		// 	}
-		// }
+		if ( ! $force ) {
+			$cached = $this->get_cache( $endpoint, $params );
+			if ( ! empty( $cached ) ) {
+				return $cached;
+			}
+		}
 
 		// Make a fresh request and cache it.
 		$request = Eventbrite_API::call( $endpoint, $params, $id );
