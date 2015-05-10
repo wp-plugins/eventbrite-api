@@ -366,7 +366,7 @@ function eventbrite_ticket_form_widget() {
 	// Build the src attribute URL.
 	$src = add_query_arg( array(
 			'eid' => get_the_ID(),
-			'ref' => 'wporgetckt',
+			'ref' => 'etckt',
 	), '//eventbrite.com/tickets-external' );
 
 	// Assemble our ticket info HTML.
