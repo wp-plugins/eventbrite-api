@@ -102,8 +102,8 @@ class Eventbrite_Event {
 	 * @return Eventbrite_Event|bool Eventbrite_Event object, false otherwise.
 	 */
 	public static function get_instance( $event_id ) {
-		// We can bail if no event ID was passed.
-		if ( ! $event_id ) {
+		// We can bail if no event ID was passed, or it wasn't an integer.
+		if ( ! $event_id || ! is_int( $event_id ) ) {
 			return false;
 		}
 
@@ -127,7 +127,8 @@ class Eventbrite_Event {
 	 * @param object $event An event object from the API results.
 	 */
 	public function __construct( $event ) {
-		foreach ( get_object_vars( $event ) as $key => $value )
+		foreach ( get_object_vars( $event ) as $key => $value ) {
 			$this->$key = $value;
+		}
 	}
 }
