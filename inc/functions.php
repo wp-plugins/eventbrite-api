@@ -287,6 +287,39 @@ function eventbrite_event_organizer() {
 }
 endif;
 
+if ( ! function_exists( 'eventbrite_event_category' ) ) :
+/**
+ * Give access to the current event's category properties: resource_uri, id, name, name_localized, short_name, short_name_localized
+ *
+ * @return object Category info
+ */
+function eventbrite_event_category() {
+	return apply_filters( 'eventbrite_event_category', get_post()->category );
+}
+endif;
+
+if ( ! function_exists( 'eventbrite_event_subcategory' ) ) :
+/**
+ * Give access to the current event's subcategory properties: resource_uri, id, name, name_localized, short_name, short_name_localized
+ *
+ * @return object Subcategory info
+ */
+function eventbrite_event_subcategory() {
+	return apply_filters( 'eventbrite_event_subcategory', get_post()->subcategory );
+}
+endif;
+
+if ( ! function_exists( 'eventbrite_event_format' ) ) :
+/**
+ * Give access to the current event's format properties: resource_uri, id, name, name_localized, short_name, short_name_localized
+ *
+ * @return object Format info
+ */
+function eventbrite_event_format() {
+	return apply_filters( 'eventbrite_event_format', get_post()->format );
+}
+endif;
+
 if ( ! function_exists( 'eventbrite_event_start' ) ) :
 /**
  * Give access to the current event's start time: timezone, local, utc
@@ -404,12 +437,12 @@ function eventbrite_get_ticket_form_widget_height() {
 	// Check each ticket.
 	foreach ( $tickets as $ticket ) {
 		// Add height for each visible ticket type.
-		if ( ! $ticket->hidden ) {
+		if ( ! isset( $ticket->hidden ) || true != $ticket->hidden ) {
 			$height += 45;
 		}
 
 		// Check if any visible sales are still open.
-		if ( ( time() < mysql2date( 'U', $ticket->sales_end ) ) && ! $ticket->hidden ) {
+		if ( ( ! isset( $ticket->sales_end ) || time() < mysql2date( 'U', $ticket->sales_end ) ) && ( ! isset( $ticket->hidden ) || true != $ticket->hidden ) ) {
 			$sales_open = true;
 		}
 	}
